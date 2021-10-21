@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <section id="landing" style="background: url(&quot;assets/img/y-so-serious.png&quot;) repeat;background-size: auto;">
+        <div class="container" id="main-cont">
+            <div class="d-flex flex-column justify-content-center align-items-center" id="main-content"><img class="pulse animated" id="champlain-logo" src="assets/img/CCSL_CW.png">
+                <h1 class="text-center" data-aos="fade-up" data-aos-delay="150" id="intro-heading">Pet Clinic Scrum Project</h1>
+                <h1 class="text-center" data-aos="fade" data-aos-delay="1000" id="intro-subheading" style="color: rgb(197,197,197);font-family: 'Aeonik Pro';font-size: 31px;">E-Portfolio&nbsp; |&nbsp; Tristan Giguère</h1>
+                <div data-bss-hover-animate="rubberBand" id="sprint-links">
+                    <h1 id="sprnttexts"><a href="#main-section">View Sprint 2</a></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500">User Story</h1>
+                <p class="section-paragraph">Throughout the initial sprint of the project, my team and I had difficulties with the user stories we were assigned to. The problems were stopping us from moving forward, as we were encountering many bugs, execution errors and exceptions. However, we took the opportunity of Sprint 2 to move forward in the project, and I decided to adopt a proactive approach. I talked with my team, and we decided that I would push my user stories of Sprint 1 to Sprint 2. Those user stories that I had to implement were the following:<br></p>
+            </div>
+        </div>
+    </section>
+    <section id="generic-section-1">
+        <div class="container" id="columnscontainer">
+            <div class="row">
+                <div class="col-md-6 card-column" id="card-col-left">
+                    <h1 class="card-col-title">Delete Vet</h1>
+                    <p id="card-col-left" class="section-paragraph" style="font-size: 18px;font-weight: bold;">As a user, I want to remove Vets that do not work at the pet clinic anymore.<br></p>
+                    <p id="card-col-left-2" class="section-paragraph" style="font-size: 18px;font-weight: bold;">Acceptance criteria:<br>• An HTTP DELETE request must be sent when the id of the target record is specified in the URL.<br>• If the DELETE request is successful, the HTTP response must display a confirmation page that the record has been deleted.<br></p>
+                </div>
+                <div class="col-md-6 card-column" id="card-col-right">
+                    <h1 class="card-col-title">Update Vet</h1>
+                    <p id="card-col-left-1" class="section-paragraph" style="font-size: 18px;">As a user, I want to be able to update information about vets to keep the information up-to-date.<br></p>
+                    <p id="card-col-left-3" class="section-paragraph" style="font-size: 18px;font-weight: bold;">Acceptance Criteria:<br>• The HTTP PUT request must be sent when the id of the record is in the URL.<br>• The HTTP response must show a form with fields to update the record information.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <p class="section-paragraph" style="font-size: 18px;">The stories both had proper realistic acceptance criteria, which made the implementation clearer, and also respectively had story points estimates that were thoughtfully attributed by our team.&nbsp;<br><br>Also, as I was working on implementing the DeleteVet and doing my tests, I figured that the getVet (method for getting single vet) was not done, as well as the CreateVet method. I needed those for my tests, so I decided to use an Agile approach and be proactive. I therefore decided to reach out to my teammate which was responsible of this story. After informing him, I took over his two stories as well, and therefore successfully implemented three stories for Sprint 2, which are createVet, deleteVet and getVet(single).<br><br><br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section-2">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht">Version Control</h1>
+                <p class="section-paragraph">During Sprint 2, I utilized Version Control techniques in order to work seamlessly in sync with the shared GitHub repository on the project. Firstly, I created my own branch that followed the naming convention. The branch I initially created was for the first story I was working on, which was DeleteVet.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2012.02.45%20AM.png">
+                <p class="section-paragraph margin-bottom-30px">I also made sure to commit at different intervals, basically I committed every time my code had something new and working to it. I also left clear commit messages for each one. However, as I took over Vlad’s two stories, I did the changes and implementation in the code all at once, and therefore decided to put the new changes for createVet, deleteVet and getVet on the same branch. When I did this, I ensured to combine the commit messages into one, so that the documentation would stay clear and consistent for better readability.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2012.09.56%20AM.png"><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2012.11.45%20AM.png">
+                <p class="section-paragraph margin-bottom-30px">Afterwards, I finally created a pull request, using the appropriate naming template, in order for two of my teammates to review my code and to accept the PR and merge it to the main branch.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-19%20at%2011.53.34%20PM.png">
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Test-Driven Development</h1>
+                <p class="section-paragraph">I adopted the concept of Test-Driven Development for my Create, Delete and Get (CDG) user stories for this Sprint. In fact, I made use of the JUnit 5 library in order to successfully build application unit tests. More specifically, I ensured coverage of all implementation for my CDG stories, since I tested my Delete implementation by having a combined test that firstly creates a vet using the Create method, then retrieves the created vet using the Get method, then deletes the vet using the Delete method, and then verifies if the vet still exists with the Get method again. All together, the combined unit tests that I built provide at least 90% of testing of the code coverage, and also offer great readability thanks to the built-in Java Docs documentation that I added at each step of my tests to ensure great readability by other collaborators.<br><br>Regarding the test data used, I used as mentioned above the method to Create, Delete and Get a Vet, and chose real-world test data to make my test as relevant as possible to the real-world.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht-1" style="color: white;">Code</h1>
+                <p class="section-paragraph">Since my responsibility is mostly related to the API gateway service, most of our operations happen in the domain client and in the presentation layers of the Pet Clinic project.<br><br>Throughout the code that I have developed for my user stories, my code was meeting the requirements set in the acceptance criteria, since my methods were taking the same arguments and attributes as defined in the requirements, and the response of the code implemented were exactly the results expected in the story description and acceptance criteria. For example, for the deleteVet user story, it was necessary that we pass the Id of the vet we want to delete in the URL, and that we in return delete the vet associated to the selected ID from the database. Effectively, our code implementation uses the Id of the Vet in the REST endpoint URL, and in return deletes that vet from our DB.<br><br>The code implemented for each of my user stories can also be used in other languages, as the attributes used are universal and bilingual, and the code is well documented, which would make it easy to add a translation to the exact URL of the request. I also made used of the DTOs in our API Gateway service in order to perform operations on the data.<br><br>To comply with the data model, I used the REST Controller in the Presentation Layer, the Service Client in the domain client layer, as well as the DTOs in the data layer for every functionality that I implemented.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Security</h1>
+                <p class="section-paragraph">Since we are part of the API Gateway service, we are more involved with direct API queries. That said, in Sprint 2, I made sure to use DTOs everywhere it was needed in order to have a securely and efficiently structured implementation. In order to utilize secure programming techniques, I made sure that all the direct database requests that my code performed on the SQL container were built with query parameters, which greatly reduces the risk for injection vulnerabilities. Also, I kept the code simple with well-documented Java Docs so that it would be easy to maintain for security purposes.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht" style="color: white;">Code Review</h1>
+                <p class="section-paragraph">Regarding the review aspect of this sprint, I used techniques to make sure that my code could be well reviewed. First of all, I added embedded Java Docs documentation across all of my code to be reviewed, so that the reviewers could easily understand, interpret and review my code. Second of all, I made sure to assign reviewers for my Pull Request that were in my team, since they are well-involved with the API Gateway structure, and I chose reviewers that had worked on similar User stories.<br><br>After my colleagues had reviewed my code, I then took note of their recommendations, and determined that I needed to refine the naming of my unit tests, as well as to separate my tests into different testing scenarios.<br><br>For this sprint, I did not get assigned as a code reviewer for any user stories, which did not give me the opportunity to review others' code.<br><br>Lastly, I made sure to comply with Jira and GitHub by following the naming conventions and rules set forth in the repository's documentation.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">End-to-End Testing</h1>
+                <p class="section-paragraph">Since the Selenium tests implementation was not completely ready, we were not able to develop Selenium tests for this Sprint. Also, since our service is the API-Gateway, the majority of our implementation is done on the backend and no graphical UI is involved in our User Stories.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht-2" style="color: white;">Deployment</h1>
+                <p class="section-paragraph">The stories that I implemented in Sprint 2 were built so that they could be deployed using continuous integration and development (CI/CD) procedures. Firstly, since each service in this project is structured using Docker, the entirety of my implementation for this sprint is containerized inside the API-Gateway Docker container. I also made sure to utilize a domain-driven design approach, which means that all of the different sections of the code for my user stories resides in the appropriate separate application layers. This greatly facilitates the workflow and maintenance in a CI/CI development environment. Also, as shown below, all of my Unit tests successfully pass and the code successfully builds.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2010.01.28%20PM.png">
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Scrum and Agile Adherence</h1>
+                <p class="section-paragraph">During Sprint 2, I attended most of the scrum meetings with my teammates so that everyone would stay connected and aligned on what to do. I also reached out many times to my team partners with issues that I was facing with the implementation of my code, to get their feedback and outside opinion. Also, when participating in the scrum meetings, I brought to the table what I had done up to that moment, what was next for me to implement, as well as the elements that were slowing me down or restricting me from going forward.<br><br>I kept a proactive approach during the whole sprint. As opposed to the first sprint of this project, I used an Agile approach to make sure that I stayed in control over the whole process. To do so, I focused on self-organization and team collaboration, but I put a big emphasis on value-based prioritization. This is a big change from Sprint 1, where I kept being stuck on my first user story because I had a hard time with exceptions and code errors. In Sprint 2, I proactively started the implementation of my user stories. If I was stuck somewhere, I would reach out to my teammates for help, while at the same time evaluating if starting another user story and coming back at the issue later on was valuable based on the situation. Also, as mentioned previously, when I was building my tests, if one of my teammates’ user story was not ready yet but was needed for me to complete my story, I would talk with the person assigned to that story and agree to take over his user story. This allowed me to move forward faster while getting stuck way less.<br><br>I was also there to do troubleshooting and testing to help my teammates in the completion of their user stories. Team collaboration is really important in an Agile environment, and in the next sprint, I will pay even more importance to the daily scrum meetings to make sure that the whole team stays 100% on track.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" id="sect-heading-wht-3" style="color: white;">Scrum Roles</h1>
+                <p class="section-paragraph">Our scrum master for Sprint 2 was Lawrence. In my opinion, Lawrence did a great job in organizing daily scrum meetings, keeping everyone on track and ensuring great collaborations. For example, if someone was not able to attend the meeting live, he would send them specific questions for them to answer regarding their challenges, their progress and the actions they would take next to improve. Also, Kenny, in my opinion, fulfilled his product owner role for this sprint. He was keeping the Jira organized, and he was making sure our Pull Requests and code implementations were correctly done. However, I felt that Kenny was more distant and less participative to do his job of the product owner and could have been more present.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Progress</h1>
+                <p class="section-paragraph">To finalize this e-portfolio, reflecting back on my performance this sprint, I think that I did way better than Sprint 1. I was moving forward, did more pull requests, as well as was more active with the Jira board and team collaboration than during Sprint 1. Also, I think that I performed better in the development aspect, because I did more research and looked at more documentation before directly implementing the code for my user stories. I faced way less errors, code conflicts or failing tests in this sprint, mostly because of that.<br><br>However, there definitely still are some gaps in my performance when looking at where I need to be in terms of performance. The main gap is still in team collaboration, assisting to team meetings, reviewing more pull requests, as well as providing more feedback to help my teammates. This helps us a lot to move forward in the project as a team, and make our API Gateway service better.<br><br><strong><em><span style="text-decoration: underline;">To fill those gaps in my performance mentioned above, I set a goal that is SMART:</span></em></strong><br><br>1. Specific - I will make the effort to attend all scrum meetings and assist my team better in code review and feedback.<br>2. Measurable - It will be measurable, since I want to do at least 8 code reviews for my teammates, and I want to attend 100% of the scrum meetings in the next sprint.<br>3. Achievable - This goal is greatly realistic, because we have frequent asynchronous sessions for me to set dedicated time for team collaboration.<br>4. Relevant - This goal is very relevant, since it is directly connected to my objective and implementing such actions will directly increase my performance.<br>5. Timed - I want to achieve this goal by the beginning of the next Sprint 3.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
