@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <section id="landing" style="background: url(&quot;assets/img/y-so-serious.png&quot;) repeat;background-size: auto;">
+        <div class="container" id="main-cont">
+            <div class="d-flex flex-column justify-content-center align-items-center" id="main-content"><img class="pulse animated" id="champlain-logo" src="assets/img/CCSL_CW.png">
+                <h1 class="text-center" data-aos="fade-up" data-aos-delay="150" id="intro-heading">Pet Clinic Scrum Project</h1>
+                <h1 class="text-center" data-aos="fade" data-aos-delay="1000" id="intro-subheading" style="color: rgb(197,197,197);font-family: 'Aeonik Pro';font-size: 31px;">E-Portfolio&nbsp; |&nbsp; Tristan Giguère</h1>
+                <div data-bss-hover-animate="rubberBand" id="sprint-links">
+                    <h1 id="sprnttexts"><a href="/sprint2.html">Sprint 2</a></h1> <h1 id="sprnttexts"><a href="/sprint3.html">Sprint 3</a></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500">User Story</h1>
+                <p class="section-paragraph">During the last sprint of the project, I was mainly responsible of implementing one user story, because I was also the scrum master. The story implied added functionality that would enable the end user to filter available vets from unavailable vets on the web interface.</p>
+            </div>
+        </div>
+    </section>
+    <section id="generic-section-1">
+        <div class="container" id="columnscontainer">
+            <div class="row">
+                <div class="col-md card-column" id="card-col-left">
+                    <h1 class="card-col-title">Have an endpoint to filter available from unavailable vets</h1>
+                    <p id="card-col-left" class="section-paragraph" style="font-size: 18px;font-weight: bold;">As a user, I want to filter out vets that are enabled and disabled so I know with who shall I take an appointment for my pet.<br></p>
+                    <p id="card-col-left-2" class="section-paragraph" style="font-size: 18px;font-weight: bold;">Acceptance criteria:<br>• When the switch is on, the Vet is available.<br>• When the switch is off, the vet is unavailable.<br>• Available and unavailable vets will be displayed using different endpoints.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <p class="section-paragraph" style="font-size: 18px;">This story had proper realistic, as well as clear and specific acceptance criteria, which made the implementation clearer, and also it had story points estimates that were thoughtfully attributed by our team.<br><br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section-2">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht">Version Control</h1>
+                <p class="section-paragraph">During the final sprint of the project, I utilized Version Control techniques in order to work seamlessly in sync with the shared GitHub repository on the project. Firstly, I created my own branch that followed the naming convention. The branch I initially created was named accordingly to my story.<br><br>I was also ensuring to regularly commit in the branch as I was making progress in the development.<br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Test-Driven Development</h1>
+                <p class="section-paragraph">As Unit testing was a crucial part of this project, I used the JUnit 5 library in order to successfully build application unit tests. More specifically, I ensured coverage of the implementation for my Endpoint Filtering story. However, looking back at the project, I think that additional front-end Selenium tests could have been done, but this was not planned, especially because of the lack of time (It was also not our responsability, we were not in charge of the front-end but mostly the API Gateway.). Since my user story for this sprint is pretty small, I managed to reach at least 90% of testing of the code coverage in my unit tests, and also offer great readability thanks to the built-in Java Docs documentation that I added at each step of my tests to ensure great readability by other collaborators.</p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht-1" style="color: white;">Code</h1>
+                <p class="section-paragraph">Since my responsibility is mostly related to the API gateway service, most of our operations happen in the domain client and in the presentation layers of the Pet Clinic project.<br><br>Throughout the code that I have developed for my user stories, my code was meeting the requirements set in the acceptance criteria, since my methods were taking the same arguments and attributes as defined in the requirements, and the response of the code implemented were exactly the results expected in the story description and acceptance criteria. For example, for the deleteVet user story, it was necessary that we pass the Id of the vet we want to delete in the URL, and that we in return delete the vet associated to the selected ID from the database. Effectively, our code implementation uses the Id of the Vet in the REST endpoint URL, and in return deletes that vet from our DB.<br><br>The code implemented for each of my user stories can also be used in other languages, as the attributes used are universal and bilingual, and the code is well documented, which would make it easy to add a translation to the exact URL of the request. I also made used of the DTOs in our API Gateway service in order to perform operations on the data.<br><br>To comply with the data model, I used the REST Controller in the Presentation Layer, the Service Client in the domain client layer, as well as the DTOs in the data layer for every functionality that I implemented.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Security</h1>
+                <p class="section-paragraph">As far as security is concerned, since my endpoint enables the user to select available and unavailable vets, there is not a huge security requirement to consider through the implementation. That said, however, I made sure to use DTOs where possible and needed to ensure efficient and secure structure.<br><br>Also, I ensured that all the direct database requests that my code performed on the SQL container were built with query parameters, which greatly reduces the risk for injection vulnerabilities. Lastly, I kept the code simple with well-documented Java Docs so that it would be easy to maintain for security purposes.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht" style="color: white;">Code Review</h1>
+                <p class="section-paragraph">Regarding the review aspect of this sprint, I used techniques to make sure that my code could be well reviewed. First of all, I added embedded Java Docs documentation across all of my code to be reviewed, so that the reviewers could easily understand, interpret and review my code. Second of all, I made sure to assign reviewers for my Pull Request that were in my team, since they are well-involved with the API Gateway structure, and I chose reviewers that had worked on similar User stories.
+<br><br>
+After my colleagues had reviewed my code, I then took note of their recommendations, and determined that I needed to refine the implementation of my unit tests, as well as to validate my implementation directly with the VETS team as they were working on our story at the same time as we were.<br><br>
+For this sprint, I did not get assigned as a code reviewer for any user stories, which did not give me the opportunity to review others' code. Lastly, I made sure to comply with Jira and GitHub by following the naming conventions and rules set forth in the repository's documentation.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">End-to-End Testing</h1>
+                <p class="section-paragraph">Since the Selenium tests implementation was not completely ready, we were not able to develop Selenium tests for this Sprint. Also, since our service is the API-Gateway, the majority of our implementation is done on the backend and no graphical UI is involved in our User Stories.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" id="sect-heading-wht-2" style="color: white;">Deployment</h1>
+                <p class="section-paragraph">The story that I implemented in the last sprint of this project was basically an addition to the current implementation of the Vets service. That said, it was built so that they it could be deployed using continuous integration and development (CI/CD) procedures. Firstly, since each service in this project is structured using Docker, the entirety of my implementation for this sprint is containerized inside the API-Gateway Docker container. I also made sure to utilize a domain-driven design approach, which means that all of the different sections of the code for my endpoint filter story resides in the appropriate separate application layers. This greatly facilitates the workflow and maintenance in a CI/CI development environment.<br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Scrum and Agile Adherence</h1>
+                <p class="section-paragraph">During the last sprint, I was there in the majority of the scrum meetings with my teammates so that everyone would stay connected and aligned on what to do. I also reached out many times to my team partners through the chat with issues that I was facing with the implementation of my code, to get their feedback and outside opinion. Also, when participating in the scrum meetings, I brought to the table what I had done up to that moment, what was next for me to implement, as well as the elements that were slowing me down or restricting me from going forward. I also made distinctive effort to motivate the team to start using Slack more actively, so that all of our communications could be centralized in one place.<br><br>
+I kept a proactive approach during the whole sprint. As opposed to the first sprint of this project, I used an Agile approach to make sure that I stayed in control over the whole process. To do so, I focused on self-organization and team collaboration, but I put a big emphasis on value-based prioritization. This is a big change from Sprint 1, and it is a continuation of the improvements of Sprint 2. I kept proactively researching and figuring out the best and most efficient way to do the implementation of my user stories. If I was stuck somewhere, I would reach out to my teammates for help, while at the same time evaluating if trying another direction for the implementation was valuable.<br><br>I was also there to do troubleshooting and testing to help my teammates in the completion of their user stories. Team collaboration is really important in an Agile environment, and I made sure to put this philosophy forward throughout.</p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" id="sect-heading-wht-3" style="color: white;">Scrum Roles</h1>
+                <p class="section-paragraph">I had the chance of taking the role of the Scrum Master for this last sprint. I was in charge, and made sure, of hosting regular meetings with the team to ensure that everyone was on track, as well as to monitor closely the progress of everyone in regards to their user stories, by tracking their challenges, their current progress status, as well as the steps they would be taking to overcome the issues that they were facing. I managed to organize in total 8 meetings over the span of the two-week sprint, which meant for evenly-spaced but frequent meetings. We were having a lot of issues with other teams putting their hands on our code in this sprint, so I was also there to discuss the issues with my team through those meetings and come up with the best solutions.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" data-aos="fade-up" data-aos-duration="500" style="padding-bottom: 10px;">Progress</h1>
+                <p class="section-paragraph">To finalize this e-portfolio, reflecting back on my performance this sprint, I think that I did way better than Sprint 1. I was moving forward, did more pull requests, as well as was more active with the Jira board and team collaboration than during Sprint 1. Also, I think that I performed better in the development aspect, because I did more research and looked at more documentation before directly implementing the code for my user stories. I faced way less errors, code conflicts or failing tests in this sprint, mostly because of that.<br><br>However, there definitely still are some gaps in my performance when looking at where I need to be in terms of performance. The main gap is still in team collaboration, assisting to team meetings, reviewing more pull requests, as well as providing more feedback to help my teammates. This helps us a lot to move forward in the project as a team, and make our API Gateway service better.<br><br><strong><em><span style="text-decoration: underline;">To fill those gaps in my performance mentioned above, I set a goal that is SMART:</span></em></strong><br><br>1. Specific - I will make the effort to attend all scrum meetings and assist my team better in code review and feedback.<br>2. Measurable - It will be measurable, since I want to do at least 8 code reviews for my teammates, and I want to attend 100% of the scrum meetings in the next sprint.<br>3. Achievable - This goal is greatly realistic, because we have frequent asynchronous sessions for me to set dedicated time for team collaboration.<br>4. Relevant - This goal is very relevant, since it is directly connected to my objective and implementing such actions will directly increase my performance.<br>5. Timed - I want to achieve this goal by the beginning of the next Sprint 3.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
